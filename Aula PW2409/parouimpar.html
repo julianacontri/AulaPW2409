@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1> Minha Calculadora</h1>
+<label for="num1">Primeiro Número</label><br>
+<input type="number" id="num1"><br><br>
+
+<label for="num2">Primeiro Número</label><br>
+<input type="number" id="num2"><br><br>
+
+<button onclick="somar()">Somar</button><br><br>
+<p id="resultado"></p>    
+
+<button onclick="subtrair()">subtrair</button><br><br>
+<p id="resultado"></p>    
+
+<button onclick="multiplicar()">Mutiplicar</button><br><br>
+<p id="resultado"></p>    
+
+<button onclick="dividir()">Dividir</button><br><br>
+<p id="resultado"></p>    
+
+<script>
+    function somar() {
+        // Obtém os valores digitados nos campos de texto
+        const num1 = parseFloat(document.getElementById('num1').value) || 0;
+        const num2 = parseFloat(document.getElementById('num2').value) || 0;
+        
+        // Calcula a soma
+        const soma = num1 + num2;
+        const subtrair = num1 + num2;
+        const multiplicar = num1 + num2;
+        const dividir = num1 + num2;
+        
+        // Exibe o resultado na tela
+        document.getElementById('resultado').innerText = "O resultado é " + soma;
+        document.getElementById('resultado').innerText = "O resultado é " + subtrair;
+        document.getElementById('resultado').innerText = "O resultado é " + multiplicar;
+        document.getElementById('resultado').innerText = "O resultado é " + dividir;
+    }
+</script>
+
+</body>
+</html>
